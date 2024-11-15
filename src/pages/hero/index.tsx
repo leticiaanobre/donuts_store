@@ -75,7 +75,7 @@ const Hero = () => {
             </header>
             <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)]">
     <div className="flex flex-col items-center justify-center px-4">
-        <div className='absolute z-50'>
+        <div className='md:absolute md:z-50'>
             <Image 
                 src={'/donutshome.svg'} 
                 alt='donuts home image' 
