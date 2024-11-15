@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Sobre = () => {
     return (
         <section className="py-14">
@@ -14,7 +16,7 @@ const Sobre = () => {
                 </div>
                 <div className="shadow-lg items-center rounded-lg gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="flex-1 sm:hidden lg:block">
-                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="md:max-w-lg sm:rounded-lg" alt="" />
+                        <Image src="/donutsabout.svg" width={500} height={200} alt="" />
                     </div>
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
                         <h3 className="text-gray-800 font-semibold">
