@@ -1,6 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import Hero from "./hero";
+import Sobre from "./sobre";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between font-sans'>
       <Hero/>
+      <Sobre/>
     </main>
   );
 }
