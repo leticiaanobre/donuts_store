@@ -14,10 +14,7 @@ const SecondSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="shadow-lg items-center rounded-lg gap-x-12 sm:px-4 md:px-0 lg:flex">
-                    <div className="flex-1 sm:hidden lg:block">
-                        <Image src="/donutsabout.svg" width={500} height={200} alt="" />
-                    </div>
+                <div className=" items-center rounded-lg gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
                         <h3 className="text-gray-800 font-semibold">
                             Wake up and smell the donuts.
@@ -36,6 +33,20 @@ const SecondSection = () => {
                                 <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
                             </svg>
                         </a>
+                    </div>
+                    <div className='flex flex-col justify-start items-center'>
+                        <div className="flex flex-col justify-start items-center sm:hidden lg:block absolute">
+                            <Image 
+                                src="/donutsabout2.svg" 
+                                width={500} 
+                                height={200} 
+                                alt="" 
+                                className="w-[70%]  sm:w-[60%] md:w-[60%] lg:w-[80%]"
+                                />
+                        </div>
+                        <div className="flex-1 sm:hidden lg:block relative translate-x-[-30%] translate-y-[40%] z-50">
+                            <Image src="/card.svg" width={500} height={100} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

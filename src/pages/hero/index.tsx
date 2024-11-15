@@ -19,7 +19,7 @@ const Hero = () => {
                     src="/donutful..svg"
                     width={120}
                     height={50}
-                    alt="Float UI logo"
+                    alt="logo"
                 />
             </a>
             <div className="md:hidden">
@@ -74,7 +74,7 @@ const Hero = () => {
                 </nav>
             </header>
             <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)]">
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center px-4">
         <div className='absolute z-50'>
             <Image 
                 src={'/donutshome.svg'} 
