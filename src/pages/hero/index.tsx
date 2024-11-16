@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Hero = () => {
     const [state, setState] = useState(false)

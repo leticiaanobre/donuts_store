@@ -1,5 +1,3 @@
-import Image from "next/image";
-import localFont from "next/font/local";
 import Hero from "./hero";
 import Sobre from "./sobre";
 import Produtos from "./produtos";

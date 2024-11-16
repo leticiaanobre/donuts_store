@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function Footer () {
 
     const footerNavs = [
@@ -71,9 +72,9 @@ export default function Footer () {
             <div className="gap-6 justify-between md:flex">
                 <div className="flex-1">
                     <div className="max-w-xs">
-                        <img src="/Donutful..svg" className="w-32" />
+                        <Image src="/Donutful..svg" width={250} height={250} className="w-32" alt='logo' />
                         <p className="leading-relaxed mt-2 text-[15px]">
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
                         </p>
                     </div>
                     <form 
