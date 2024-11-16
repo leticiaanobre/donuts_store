@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Hero from "./hero";
 import Sobre from "./sobre";
 import Produtos from "./produtos";
+import Sales from "./sales";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero/>
       <Sobre/>
       <Produtos/>
+      <Sales/>
     </main>
   );
 }
