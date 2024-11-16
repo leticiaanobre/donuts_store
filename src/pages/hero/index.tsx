@@ -4,17 +4,16 @@ import { useEffect, useState } from 'react'
 const Hero = () => {
     const [state, setState] = useState(false)
 
-    // Replace javascript:void(0) paths with your paths
     const navigation = [
-        { title: "Home", path: "javascript:void(0)" },
+        { title: "Home", path: "#hero" },
         { title: "Sobre", path: "#sobre" },
-        { title: "Produtos", path: "javascript:void(0)" },
-        { title: "Preços", path: "javascript:void(0)" }
+        { title: "Produtos", path: "#produtos" },
+        { title: "Preços", path: "#sales" }
     ]
 
     const Brand = () => (
-        <div className="flex items-center justify-between py-5 md:block">
-            <a href="javascript:void(0)">
+        <div className="flex items-center justify-between py-5 md:block" id='hero'>
+            <a href="#hero">
                 <Image
                     src="/donutful..svg"
                     width={120}
@@ -23,7 +22,8 @@ const Hero = () => {
                 />
             </a>
             <div className="md:hidden">
-                <button className="menu-btn text-gray-500 hover:text-gray-800"
+                <button 
+                    className="menu-btn text-gray-500 hover:text-gray-800"
                     onClick={() => setState(!state)}
                 >
                     {
@@ -44,14 +44,14 @@ const Hero = () => {
 
     return (
         <div className='relative min-h-screen w-full'>
-            <header>
+            <header className="relative z-50">
                 <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
                     <Brand />
                 </div>
                 <nav className={`md:text-sm ${state ? "absolute top-0 inset-x-0 bg-white shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative md:bg-transparent" : ""}`}>
                     <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
                         <Brand />
-                        <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'} `}>
+                        <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'}`}>
                             <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                                 {navigation.map((item, idx) => (
                                     <li key={idx} className="text-gray-700 hover:text-gray-900">
@@ -73,31 +73,30 @@ const Hero = () => {
                     </div>
                 </nav>
             </header>
-            <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)]">
-    <div className="flex flex-col items-center justify-center px-4">
-        <div className='md:absolute md:z-50'>
-            <Image 
-                src={'/donutshome.svg'} 
-                alt='donuts home image' 
-                layout="responsive"
-                width={450} 
-                height={100} 
-                className="w-[70%] max-w-[450px] sm:w-[50%] md:w-[40%] lg:w-[30%]"
-            />
-        </div>
-        <div className='relative'>
-            <Image 
-                src={'/2023.svg'} 
-                alt='2023 image'
-                layout="responsive"
-                width={900} 
-                height={100} 
-                className="w-[80%] max-w-[900px] sm:w-[60%] md:w-[50%] lg:w-[40%]"
-            />
-        </div>
-    </div>
-</section>
-
+            <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] relative z-40">
+                <div className="flex flex-col items-center justify-center px-4">
+                    <div className='md:absolute md:z-30'>
+                        <Image 
+                            src={'/donutshome.svg'} 
+                            alt='donuts home image' 
+                            layout="responsive"
+                            width={450} 
+                            height={100} 
+                            className="w-[70%] max-w-[450px] sm:w-[50%] md:w-[40%] lg:w-[30%]"
+                        />
+                    </div>
+                    <div className='relative md:z-20'>
+                        <Image 
+                            src={'/2023.svg'} 
+                            alt='2023 image'
+                            layout="responsive"
+                            width={900} 
+                            height={100} 
+                            className="w-[80%] max-w-[900px] sm:w-[60%] md:w-[50%] lg:w-[40%]"
+                        />
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

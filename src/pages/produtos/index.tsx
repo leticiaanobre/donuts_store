@@ -24,7 +24,7 @@ const Produtos = () => {
     ]
     
     return (
-        <section className="flex flex-col items-center justify-center mx-auto px-4 max-w-screen-xl md:px-8">
+        <section className="flex flex-col items-center justify-center mx-auto px-4 max-w-screen-xl md:px-8" id='produtos'>
             <div className="text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     Take a doughnut break

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Sales = () => {
     return (
-        <section className="py-14" id='sobre'>
+        <section className="py-14" id='sales'>
             <div className="flex flex-col px-4 justify-center items-center gap-14 max-w-screen-xl mx-auto md:px-8">
                 <div className="items-center rounded-lg gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className='flex flex-col items-center justify-center px-4'>
